@@ -3,7 +3,7 @@
 ### Группа 8310
 
 [Ссылка на проект 4.1](https://www.tinkercad.com/things/3vhiYTXFTp1)
-![Alt text](odinPLUSdva.png)
+![Alt text](img/odinPLUSdva.png)
 
 ## Листинг программы 4.1
 ```C++
