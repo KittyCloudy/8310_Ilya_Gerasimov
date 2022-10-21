@@ -3,6 +3,7 @@
 ### Группа 8310
 
 [Ссылка на проект 3.1](https://www.tinkercad.com/things/4DQcLbs9mjk-neat-allis/editel?tenant=circuits)
+![Alt text](img/Neat-Allis.png)
 
 ## Листинг программы 3.1
 ```C++
