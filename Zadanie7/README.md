@@ -3,7 +3,7 @@
 ### Группа 8310
 
 [Ссылка на проект 7](https://www.tinkercad.com/things/bWlSh8A9RAY)
-![Alt text](img/5.png)
+![Alt text](img/7.png)
 
 ## Листинг программы 7
 ```C++
