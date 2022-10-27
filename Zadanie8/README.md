@@ -120,3 +120,6 @@ void loop()
   } 
 }
 ```
+
+## Блок схема
+![Alt text](img/vv.drawio.png)
