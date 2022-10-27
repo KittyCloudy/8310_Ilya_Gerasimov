@@ -1,98 +1,93 @@
-# Отчет №1
+# Отчет №2
 ## Илья Герасимов
 ### Группа 8310
 
-[Ссылка на проект 3.1](https://www.tinkercad.com/things/4DQcLbs9mjk-neat-allis/editel?tenant=circuits)
-![Alt text](img/Neat-Allis.png)
+[Ссылка на проект 4.1](https://www.tinkercad.com/things/3vhiYTXFTp1)
+![Alt text](img/odinPLUSdva.png)
 
-## Листинг программы 3.1
+## Листинг программы 4.1
 ```C++
-int LED1 = 13, LED2 = 12, i;
+byte i;
+byte LedMin = 2;
+byte LedMax = 11;
 void setup()
 {
-  pinMode(LED1, OUTPUT);
-  pinMode(LED2, OUTPUT);
+  for (i = LedMin; i < LedMax; i++)
+  {
+    pinMode(i, OUTPUT);
+  }
 }
-
 void loop()
 {
-  for(i = 0; i < 4; i++)
+  for (i = LedMin; i <= LedMax; i++)
   {
-    delay(100);
-    digitalWrite(LED2, HIGH);
-    delay(550);
-    digitalWrite(LED2, LOW);
-    delay(550);
-  }
-  
-  delay(1000);
-  
-  for(i = 0; i < 6; i++)
-  {
-    delay(100);
-    digitalWrite(LED1, HIGH);
-    delay(500);
-    digitalWrite(LED1, LOW);
+    digitalWrite(i, HIGH);
     delay(500);
   }
-  delay(1000);
+  for(i = LedMax; i >= LedMin; i--)
+  {
+    digitalWrite(i, LOW);
+    delay(500);
+  }
 }
 ```
 
-[Ссылка на проект 3.2](https://www.tinkercad.com/things/2bs7xTlprNU-grand-elzing-snaget/editel?tenant=circuits)
-![Alt text](img/Elzing-Snaget.png)
+[Ссылка на проект 3.2](https://www.tinkercad.com/things/k8tjRHI9PCS)
+![Alt text](img/odinPLUSdva.png)
 
-## Листинг программы 3.2
+## Листинг программы 4.2
 ```C++
-int LED1 = 13, LED2 = 12, i;
+byte i;
+byte LedMin = 2;
+byte LedMax = 11;
 void setup()
 {
-  pinMode(LED1, OUTPUT);
-  pinMode(LED2, OUTPUT);
+  for (i = LedMin; i < LedMax; i++)
+  {
+    pinMode(i, OUTPUT);
+  }
 }
-
 void loop()
 {
-  digitalWrite(LED1, HIGH);
-  
-  for(i = 0; i < 10; i++)
+  for (i = LedMin; i <= LedMax; i = i+2)
   {
-    digitalWrite(LED2, HIGH);
-    delay(500);
-    digitalWrite(LED2, LOW);
+    digitalWrite(i, HIGH);
     delay(500);
   }
-  delay(4000);
+  for(i = LedMax; i >= LedMin; i--)
+  {
+    digitalWrite(i, LOW);
+    delay(500);
+  }
 }
 ```
 
-[Ссылка на проект 4](https://www.tinkercad.com/things/8xafI307Ltu-smooth-jaiks/editel?tenant=circuits)
-![Alt text](img/Smooth-Jaiks.png)
+[Ссылка на проект 4.3](https://www.tinkercad.com/things/lFchsZXNepG-copy-of-copy-of-brave-inari/editel?tenant=circuits)
+![Alt text](img/tri.png)
 
-## Листинг программы 4
+## Листинг программы 4.3
 ```C++
-int LED1 = 13, LED2 = 12, LED3 = 11, i;
+byte i;
+byte LedMin = 1;
+byte LedMax = 11;
 void setup()
 {
-  pinMode(LED1, OUTPUT);
-  pinMode(LED2, OUTPUT);
-  pinMode(LED3, OUTPUT);
+  for (i = LedMin; i < LedMax; i++)
+  {
+    pinMode(i, OUTPUT);
+  }
 }
-
 void loop()
 {
-  digitalWrite(LED1, HIGH);
-  delay(2000);
-  digitalWrite(LED2, HIGH);
-  delay(1000);
-  
-  digitalWrite(LED1, LOW);
-  digitalWrite(LED2, LOW);
-  
-  delay(200);
-  
-  digitalWrite(LED3, HIGH);
-  delay(3000);
-  digitalWrite(LED3, LOW);
+  for (i = LedMin; i <= LedMax; i++)
+  {
+    digitalWrite(i, HIGH);
+    delay(500);
+  }
+  for(i = LedMax; i >= LedMin; i--)
+  {
+    digitalWrite(i, LOW);
+    delay(500);
+  }
 }
 ```
